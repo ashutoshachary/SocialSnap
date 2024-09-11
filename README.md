@@ -1,17 +1,32 @@
 # SocialSnap
 
-SocialSnap is a social media app having various features:
-Create/Delete your account
-Post images in feed with hide likes/comments feature
-Like/comment on posts
-Update your profile/password with email otp authentication
-Follow/Unfollow other users to visit their profile
-Store images in FireBase and user data and comments, likes in MongoDB 
-Dark and Light Mode
-OTP vrification With passsword
-Chat with your friends and many more...
-📌 Technonologies used
-Technologies used are react-js, node-js, express-js, mongodb, redux, firebase, axios, bcrypt, cors, jwt, socket-io, SendInBlue( for OTP verification) etc.
+**SocialSnap** is a feature-rich social media platform designed for seamless interaction and user engagement.
+
+## Features
+- **Account Management:** Create or delete your account anytime.
+- **Feed:** Post images with the option to hide likes and comments.
+- **Engagement:** Like and comment on posts.
+- **Profile & Security:** Update your profile and password with email OTP authentication.
+- **Social Interaction:** Follow or unfollow users to view their profiles.
+- **Media Storage:** Store images in Firebase.
+- **Data Management:** User data, comments, and likes are stored in MongoDB.
+- **Dark/Light Mode:** Toggle between dark and light themes.
+- **OTP Verification:** Secure OTP verification with password.
+- **Real-time Chat:** Chat with your friends in real-time.
+- **More to come...**
+
+## Technologies Used
+- **Frontend:** React.js, Redux
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Storage:** Firebase (for images)
+- **Authentication & Security:** JWT, Bcrypt, SendInBlue (for OTP verification)
+- **API Management:** Axios, CORS
+- **Real-time Features:** Socket.io
+
+---
+
+Feel free to contribute or provide feedback to improve **SocialSnap** further!
 
 ![project-1-img-5](https://github.com/user-attachments/assets/0800702c-0b3b-4b20-8f72-4f8d40cf2cd0)
 ![project-1-img-4](https://github.com/user-attachments/assets/54676567-429d-4365-a415-bfa4fbbca72a)
