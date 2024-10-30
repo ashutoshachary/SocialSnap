@@ -118,7 +118,7 @@ const UpdateProfile = (props) => {
 
     onSubmitProps.resetForm();
     const savedUserResponse = await fetch(
-      `http://localhost:5000/auth/update/${id}`,
+      `${process.env.REACT_APP_BACKEND_URL}/auth/update/${id}`,
       {
         method: "PATCH",
         headers: {

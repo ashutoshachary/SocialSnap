@@ -134,7 +134,7 @@ const Form = () => {
     };
     formData.profilePhoto = image;
 
-    const savedUserResponse = await fetch('http://localhost:5000/auth/register',
+    const savedUserResponse = await fetch(`${process.env.REACT_APP_BACKEND_URL}/auth/register`,
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -158,7 +158,7 @@ const Form = () => {
   const login = async (values, onSubmitProps) => {
     values.email = values.email.toLowerCase();
     onSubmitProps.resetForm();
-    const loggedInResponse = await fetch("http://localhost:5000/auth/login",
+    const loggedInResponse = await fetch(`${process.env.REACT_APP_BACKEND_URL}/auth/login`,
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -187,7 +187,7 @@ const Form = () => {
     if (image) await uploadImage();
     setClicked(true);
     setOtpClick(true);
-    const response = await fetch('http://localhost:5000/auth/register/otp', {
+    const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/auth/register/otp`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

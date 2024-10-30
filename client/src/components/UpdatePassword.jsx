@@ -67,7 +67,7 @@ const UpdatePassword = (props) => {
     setClicked(true);
     onSubmitProps.resetForm();
     const savedUserResponse = await fetch(
-      `http://localhost:5000/users/${id}/update/password`,
+      `${process.env.REACT_APP_BACKEND_URL}/users/${id}/update/password`,
       {
         method: "PATCH",
         headers: {
@@ -97,7 +97,7 @@ const UpdatePassword = (props) => {
     let user;
     if (props.forgot) {
       const response = await fetch(
-        `http://localhost:5000/users/forgot/password`,
+        `${process.env.REACT_APP_BACKEND_URL}/users/forgot/password`,
         {
           method: "POST",
           headers: {
@@ -121,7 +121,7 @@ const UpdatePassword = (props) => {
     setClicked(true);
     if (user) id = user[0]._id;
     const otpResponse = await fetch(
-      `http://localhost:5000/users/${id}/update/password/sendotp`,
+      `${process.env.REACT_APP_BACKEND_URL}/users/${id}/update/password/sendotp`,
       {
         method: "POST",
         headers: {
